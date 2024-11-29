@@ -5,12 +5,17 @@ export const Context = createContext();
 
 const ContextProvider = (props) => {
 
-    const [input,setInput] = useState("");
-    const [recentPrompt,setRecentPrompt] = useState("");
-    const [prevPrompts,setPrevPrompts] = useState([]);
-    const [showResult,setShowResult] = useState(false);
-    const [loading,setLoading] = useState(false);
-    const [resultData,setResultData] = useState("");
+        // save de input data
+        const [input,setIpunt] = useState("");
+        const [recentPrompt,setRecentPrompt] = useState("");
+        // historico e display na barra de pesquisados rescentemente
+        const [prevPrompts,setPrevPrompts] = useStates([]);
+        // vai esconder as caixas e vai mostrar o resultado da pequissa
+        const [showResult,setShowResult] = useState(false);
+        // animacao de carregamento do texto
+        const[loading,setLoading] = useState(false);
+        // vai mostrar o texto/resultado final
+        const [resultData,setResultData] = useState("");
 
     const delayPara = (index,nextWord) => {
         setTimeout(function () {
