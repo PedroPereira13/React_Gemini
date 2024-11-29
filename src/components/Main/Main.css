@@ -1,3 +1,4 @@
+/* configuracoes do main  */
 .main{
     flex: 1;
     min-height: 100vh;
@@ -20,6 +21,7 @@
     max-width: 900px;
     margin: auto;
 }
+/* parte do ola dev  */
 .main .greet{
     margin: 50px 0px;
     font-size: 56px;
@@ -27,11 +29,13 @@
     font-weight: 500;
     padding: 20px;
 }
+/* mudanca de cor no titulo */
 .main .greet span{
     background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/* cards de ajuda */
 .main .cards{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
@@ -70,6 +74,7 @@
     padding: 0px 20px;
     margin: auto;
 }
+/* barra onde escrevemos a msg e o bottom de enviar */
 .search-box{
     display: flex;
     align-items: center;
