@@ -4,7 +4,9 @@ import { assets } from '../../assets/assets'
 import { Context } from '../../context/Context'
 
 const Sidebar = () => {
-
+    
+    //para deixar as coisas boleanas se for false nao aparece por completo se true aparece 
+    //(sera true se clicar{OnClick})
     const [extended, setExtended] = useState(false)
     const {anSent,prevPrompts,setRecentPrompt,newChat} = useContext(Context)
 
